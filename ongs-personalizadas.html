@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>ONGs Recomendadas — Conecta Corazones</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="top-nav">
+			<div class="nav-left">
+				<a class="nav-btn" href="index.html">Inicio</a>
+				<a class="nav-btn" href="ongs-generales.html">ONG y voluntariados</a>
+				<a class="nav-btn" href="faq.html">Preguntas frecuentes</a>
+			</div>
+			<div class="nav-right">
+				<a href="#" class="sos-logo" onclick="handleSOS(event)">
+					<img src="./images/SOSLogo.png" alt="SOS">
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="hero-image">
+		<img src="./images/ImagenONG1.png" alt="Conecta Corazones">
+	</div>
+
+	<main>
+		<div class="container">
+			<div class="filter-buttons">
+				<button class="filter-btn active" onclick="toggleFilter(this, 'ongs')">🏢 ONGs</button>
+				<button class="filter-btn active" onclick="toggleFilter(this, 'voluntarios')">👥 Voluntarios</button>
+			</div>
+			<div id="personalized-list" class="container-grid">
+				<div class="ong-card personalized" data-id="1">
+					<div class="ong-logo"><img src="./images/ONGS/ApascideLogo.png" alt="Apaside"></div>
+					<div class="ong-desc">Apaside es una organización dedicada a apoyar a personas con discapacidad y sus familias.</div>
+					<div class="ong-actions"><button class="btn btn-primary" onclick="contactOng('Apaside')">Acceder</button></div>
+				</div>
+				<div class="ong-card personalized" data-id="2">
+					<div class="ong-logo"><img src="./images/ONGS/AtamLogo.png" alt="Atam"></div>
+					<div class="ong-desc">Atam brinda atención integral y apoyo a personas mayores en situación de vulnerabilidad.</div>
+					<div class="ong-actions"><button class="btn btn-primary" onclick="contactOng('Atam')">Acceder</button></div>
+				</div>
+				<div class="ong-card personalized" data-id="3">
+					<div class="ong-logo"><img src="./images/ONGS/CruzRojaLogo.png" alt="Cruz Roja"></div>
+					<div class="ong-desc">Cruz Roja proporciona asistencia sanitaria, social y de emergencia a toda la comunidad.</div>
+					<div class="ong-actions"><button class="btn btn-primary" onclick="contactOng('Cruz Roja')">Acceder</button></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-content">
+			<span class="contact-title">Contacto</span>
+			<a href="mailto:conecta.corazones@gmail.com" class="contact-email">✉ conecta.corazones@gmail.com</a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
