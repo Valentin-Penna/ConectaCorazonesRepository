@@ -1,38 +1,35 @@
 # Conecta Corazones
 
-Quien necesita ayuda para comer, para ir al médico o para tener un techo muchas veces no sabe a qué puerta llamar. Hay muchísimas ONG, cada una se dedica a una cosa, y encontrar la que te toca no es fácil cuando ya vas justo de fuerzas.
+Aplicación web que conecta a personas que necesitan ayuda con las ONG adecuadas para su caso mediante una breve encuesta.
 
-Conecta Corazones quiere ser el paso anterior: una web que te pregunta qué necesitas y te dice a quién acudir.
-
-Se puede probar en [conectacorazones.vercel.app](https://conectacorazones.vercel.app).
-
-![Página de inicio con el formulario](docs/inicio.png)
+![Página de inicio con la encuesta](docs/inicio.png)
 
 ## Cómo funciona
 
-La portada es un formulario de una sola pregunta: ¿qué tipo de ayuda necesitas? Hay cuatro respuestas: alimentos, salud, educación o vivienda. Al continuar llegas a una lista de organizaciones recomendadas, cada una con una frase que explica a qué se dedica. Quien prefiera verlas todas puede saltarse el formulario.
+El usuario responde a la encuesta y la aplicación le muestra las organizaciones recomendadas, cada una con una descripción de a qué se dedica. También puede saltarse la encuesta y consultar el listado completo de ONG y voluntariados.
 
-La web no da ayuda ni dinero. Solo hace de puente entre la persona y la organización.
+La aplicación no presta la ayuda: actúa como intermediaria entre la persona y la organización.
 
-Arriba a la derecha hay siempre un botón SOS que lleva a los teléfonos de emergencia de España, por si lo que hace falta no puede esperar.
+Todas las páginas incluyen un botón SOS con acceso a los teléfonos de emergencia de España. Hay además una página de preguntas frecuentes.
 
-![Lista de organizaciones](docs/ongs.png)
+![Listado de organizaciones](docs/ongs.png)
 
-## En qué punto está
+## Estado
 
-Es un prototipo de la interfaz. Ya están la navegación entre páginas, el formulario, las fichas de las ONG, las preguntas frecuentes y el botón SOS.
+Esta versión es un prototipo de la interfaz. Incluye la navegación entre páginas, la encuesta, las fichas de las ONG, las preguntas frecuentes y el botón SOS.
 
-Faltan tres cosas:
+Pendiente:
 
-- La lista recomendada es la misma elijas lo que elijas. La respuesta del formulario llega a la página, pero todavía no se usa para filtrar.
-- El botón "Acceder" de cada ficha solo muestra un aviso. No hay contacto real con la organización.
-- Los botones "ONGs" y "Voluntarios" se marcan, pero no cambian la lista.
+- La encuesta tiene solo la primera pregunta (el tipo de ayuda). El diseño contempla varias.
+- La lista recomendada todavía no se filtra con las respuestas.
+- El botón "Acceder" de cada ficha muestra un aviso, sin contacto real con la organización.
+- Los botones "ONGs" y "Voluntarios" todavía no filtran el listado.
 
-## Con qué está hecha
+## Tecnologías
 
-HTML, CSS y JavaScript, sin frameworks ni dependencias. Son cuatro páginas, una hoja de estilos y un script. Está publicada en Vercel.
+HTML, CSS y JavaScript, sin frameworks ni dependencias: cuatro páginas, una hoja de estilos y un script.
 
-## Verla en local
+## Ejecutarlo en local
 
 ```bash
 git clone https://github.com/Valentin-Penna/ConectaCorazonesRepository.git
