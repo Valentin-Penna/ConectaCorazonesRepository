@@ -27,14 +27,6 @@ Pendiente:
 
 ## Tecnologías
 
-HTML, CSS y JavaScript, sin frameworks ni dependencias: cuatro páginas, una hoja de estilos y un script.
-
-## Ejecutarlo en local
-
-```bash
-git clone https://github.com/Valentin-Penna/ConectaCorazonesRepository.git
-```
-
-Después abre `index.html` en el navegador. No hay nada que instalar ni que compilar.
+HTML, CSS y JavaScript, sin frameworks ni dependencias: cuatro páginas, una hoja de estilos y un script. Al ser un prototipo de la interfaz, bastaba con páginas estáticas que se abren en cualquier navegador sin instalar ni compilar nada.
 
 Los logotipos de las ONG pertenecen a cada organización y se usan solo para identificarlas.
